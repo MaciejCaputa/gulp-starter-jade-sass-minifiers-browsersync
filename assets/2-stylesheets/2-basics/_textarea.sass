@@ -1,0 +1,54 @@
+$excel-color: lighten(#277448, 10%)
+
+textarea
+  word-wrap: break-word
+  text-wrap: unrestricted
+  outline: 0
+  glow: 0
+  margin: 0
+  padding: 0 5px
+  resize: none
+  cursor: cell
+  width: 100%
+
+
+.database-output textarea
+
+  // IT MAY CAUSE PROBLEMS !!!
+  display: inline-block
+  vertical-align:middle
+  text-align: center
+
+  height: 100%
+  border: none
+
+  background: #FAFAFA
+  outline: 1px solid $black
+  //border: 1px solid #666
+  // On Hover
+  &:hover
+    //outline: 1px solid lighten($excel-color, 4%)
+    outline: 1px solid lighten($excel-color, 4%)
+  // On Click
+  // Inside cell
+  &:focus, &:active
+    outline: 2px solid $excel-color
+
+
+
+textarea.word-problem
+  height: 5em
+  border: 1px solid $gray
+  border-radius: $border-radius
+  margin-bottom: 10px
+  padding: 10px
+  &:hover, &:focus, &:active
+    border-radius: $border-radius
+
+  &:hover
+    //outline: 1px solid lighten($excel-color, 4%)
+    border: 1px solid lighten($excel-color, 4%)
+  // On Click
+  // Inside cell
+  &:focus, &:active
+    border: 2px solid $excel-color
